@@ -1,0 +1,53 @@
+//struct hashtable{
+//	char base[3];
+//	int MOD;
+//}mm={'a',{'k'},6};
+
+
+struct elem {
+	int key, w[2];
+	char next, good[2];
+}gege[2] = {{2},5,{3},'a',{"gg"}};
+
+struct elem geg,ge={2,5,{9},'k',{"ff"}}; 
+
+int a=6+8;
+char pp[2]={"k",};
+
+
+int main(){		//你说到底为什么					
+	int i,MOD,count; 
+	int list[5]={21,41,77,256,6};	
+for(i=0;i<5;i=i+1){
+	count=1;
+	int p;
+	p=gege[0].w[i];
+	while(p){
+	count+1;	
+		}
+}	
+	return 0;
+}								//都是我的错      
+
+
+
+//void hashcreat(hashtable* hash,int list[],int num)		
+//{
+//	printf("请输入表的长度,即MOD的值\n");
+//	scanf("%d",&hash->MOD);
+//	int i; 
+//	for(i=0;i<hash->MOD;i++){		
+//	hash->base[i]=NULL;	}		
+//	elem *p,*temp;		
+//for(i=0;i<num;i++){
+//	p=(elem*)calloc(1,sizeof(elem));
+//	p->key=list[i];
+//if(hash->base[p->key%hash->MOD]==NULL){		 
+//	hash->base[p->key%hash->MOD]=p;		}	
+//else {	
+//	temp=hash->base[p->key%hash->MOD];
+//	hash->base[p->key%hash->MOD]=p;	
+//	p->next=temp;			} 				
+//}
+//}							
+
