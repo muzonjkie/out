@@ -1,0 +1,9 @@
+Host 192.168.216.128
+HostName 192.168.216.128
+User mzj200109
+ForwardAgent yes
+
+Host 192.168.216.128
+HostName 192.168.216.128
+User mzj200109
+ForwardAgent yes
