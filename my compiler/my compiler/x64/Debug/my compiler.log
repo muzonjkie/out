@@ -1,0 +1,17 @@
+﻿  Grammar_clear.c
+  Grammar_clear_assistant_func.c
+D:\vs2022_output\files\my compiler\my compiler\Grammar_clear.c(105,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\vs2022_output\files\my compiler\my compiler\Grammar_clear.c(401,37): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\vs2022_output\files\my compiler\my compiler\Grammar_clear.c(579,37): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\vs2022_output\files\my compiler\my compiler\Grammar_clear.c(1988,17): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\vs2022_output\files\my compiler\my compiler\Grammar_clear.c(2228,37): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\vs2022_output\files\my compiler\my compiler\Grammar_clear_assistant_func.c(408,15): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  main.c
+  正在生成代码...
+Grammar_clear_assistant_func.obj : error LNK2005: jmpbuf 已经在 Grammar_clear.obj 中定义
+main.obj : error LNK2005: jmpbuf 已经在 Grammar_clear.obj 中定义
+main.obj : error LNK2019: 无法解析的外部符号 Inithashtable，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 word_storage，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 word_split，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 printf_words，函数 main 中引用了该符号
+D:\vs2022_output\files\my compiler\x64\Debug\my compiler.exe : fatal error LNK1120: 4 个无法解析的外部命令
