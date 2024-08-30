@@ -1,24 +1,24 @@
 
 /*
-* Ğé¼Ù±àÒëÆ÷ VC 6.6.666 (Virtual Compiler 6.6.666)
+* è™šå‡ç¼–è¯‘å™¨ VC 6.6.666 (Virtual Compiler 6.6.666)
 *
 * @author zhongjie mo
-* @21/3/2024
+* @21/3/2022
 *
-* ¡ª¡ª¡ª¡ª¡ª¡ªÉùÃ÷¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-* ³ÌĞò»ùÓÚCÓïÑÔ
-* ÔËĞĞ»·¾³ÎªMicrosoft Visual Studio Community 2022 (64 Î») - Current  °æ±¾ 17.9.1
+* â€”â€”â€”â€”â€”â€”å£°æ˜â€”â€”â€”â€”â€”â€”â€”
+* ç¨‹åºåŸºäºCè¯­è¨€
+* è¿è¡Œç¯å¢ƒä¸ºMicrosoft Visual Studio Community 2022 (64 ä½) - Current  ç‰ˆæœ¬ 17.9.1
 *
-* ¡ª¡ª¡ª¡ª¡ª¡ªÖ÷Òª¹¦ÄÜ¼°È±Ïİ¡ª¡ª¡ª¡ª¡ª¡ª¡ª
-* ²»Ö§³ÖÖ¸Õë¼°Ö¸ÕëÏà¹Ø²Ù×÷
-* Ö§³Östruct¼°structÊı×é,µ«ÓÉÓÚ'{'¡¢'}'µÄ¿ÉÄÜÊ¡ÂÔ,²¿·Ö½á¹¹Ìå³õÊ¼»¯¿ÉÄÜÓëvs2022ÓĞ³öÈë
-* Ö§³Öint¡¢float¡¢charÀàĞÍ¼°Êı×é,Ö§³Ö×Ö·û´®,Ö§³Övoid£¨º¯Êı·µ»ØÖµ²¿·Ö£©
-* Ö§³Ö±äÁ¿³õÊ¼»¯ÅĞ¶¨
-* Ö§³ÖÈ«¾Ö±äÁ¿¡¢¾Ö²¿±äÁ¿¡¢¶à²ã¾Ö²¿±äÁ¿ 
-* Ö§³Ö¼òµ¥µÄÍ·ÎÄ¼şÅĞ¶¨
-* ²»Ö§³Ö++/--
-* Ö§³Ö¼ì²âÎ´¶¨ÒåµÄ±äÁ¿Óëº¯ÊıÃû
-*Ö§³Ö¼ì²âº¯ÊıÊµ²Î¡¢ĞÎ²ÎÒ»ÖÂĞÔ 
+* â€”â€”â€”â€”â€”â€”ä¸»è¦åŠŸèƒ½åŠç¼ºé™·â€”â€”â€”â€”â€”â€”â€”
+* ä¸æ”¯æŒæŒ‡é’ˆåŠæŒ‡é’ˆç›¸å…³æ“ä½œ
+* æ”¯æŒstructåŠstructæ•°ç»„,ä½†ç”±äº'{'ã€'}'çš„å¯èƒ½çœç•¥,éƒ¨åˆ†ç»“æ„ä½“åˆå§‹åŒ–å¯èƒ½ä¸vs2022æœ‰å‡ºå…¥
+* æ”¯æŒintã€floatã€charç±»å‹åŠæ•°ç»„,æ”¯æŒå­—ç¬¦ä¸²,æ”¯æŒvoidï¼ˆå‡½æ•°è¿”å›å€¼éƒ¨åˆ†ï¼‰
+* æ”¯æŒå˜é‡åˆå§‹åŒ–åˆ¤å®š
+* æ”¯æŒå…¨å±€å˜é‡ã€å±€éƒ¨å˜é‡ã€å¤šå±‚å±€éƒ¨å˜é‡ 
+* æ”¯æŒç®€å•çš„å¤´æ–‡ä»¶åˆ¤å®š
+* ä¸æ”¯æŒ++/--
+* æ”¯æŒæ£€æµ‹æœªå®šä¹‰çš„å˜é‡ä¸å‡½æ•°å
+*æ”¯æŒæ£€æµ‹å‡½æ•°å®å‚ã€å½¢å‚ä¸€è‡´æ€§ 
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -29,201 +29,201 @@
 #include <stdbool.h>
 
 #define maxsize 300
-#define line    50			//ÉêÇëµÄĞĞÊı£¨Á´±íÊı£©
+#define line    50			//ç”³è¯·çš„è¡Œæ•°ï¼ˆé“¾è¡¨æ•°ï¼‰
 #define capacity 200		
 #define stack_size 30
 #define var_size 30
 #define mem_size 10
 #define type_size 20
 #define	Is_type()  (Kw_char<=pcur->KwCode&&Kw_float>=pcur->KwCode)
-#define Is_fit_type(a) ((!strcmp((*p)->type,a)))		//´¦Àí½á¹¹ÌåÄÚ²¿³ÉÔ±ÓÃ
+#define Is_fit_type(a) ((!strcmp((*p)->type,a)))		//å¤„ç†ç»“æ„ä½“å†…éƒ¨æˆå‘˜ç”¨
 #define Is_this(a)  (a == pcur->KwCode)
 
 typedef enum  Key_Word_Code {
-	/* ÔËËã·û¼°·Ö¸ô·û */
-	Kw_plus,		// + ¼ÓºÅ
-	Kw_minus,		// - ¼õºÅ
-	Kw_star,		// * ĞÇ¡¢³ËºÅ
-	Kw_divide,		// / ³ıºÅ
-	Kw_mod,			// % ÇóÓàÔËËã·û
-	Kw_eq,			// == µÈÓÚºÅ
-	Kw_neq,			// != ²»µÈÓÚºÅ
-	Kw_lt,			// < Ğ¡ÓÚºÅ
-	Kw_leq,			// <= Ğ¡ÓÚµÈÓÚºÅ
-	Kw_gt,			// > ´óÓÚºÅ
-	Kw_geq,			// >= ´óÓÚµÈÓÚºÅ
-	Kw_assign,		// = ¸³ÖµÔËËã·û
-	Kw_not,			// !  Âß¼­·ÇÔËËã·û
-	Kw_and,			// && Âß¼­ÓëÔËËã·û
-	Kw_or,			// || Âß¼­»òÔËËã·û
+	/* è¿ç®—ç¬¦åŠåˆ†éš”ç¬¦ */
+	Kw_plus,		// + åŠ å·
+	Kw_minus,		// - å‡å·
+	Kw_star,		// * æ˜Ÿã€ä¹˜å·
+	Kw_divide,		// / é™¤å·
+	Kw_mod,			// % æ±‚ä½™è¿ç®—ç¬¦
+	Kw_eq,			// == ç­‰äºå·
+	Kw_neq,			// != ä¸ç­‰äºå·
+	Kw_lt,			// < å°äºå·
+	Kw_leq,			// <= å°äºç­‰äºå·
+	Kw_gt,			// > å¤§äºå·
+	Kw_geq,			// >= å¤§äºç­‰äºå·
+	Kw_assign,		// = èµ‹å€¼è¿ç®—ç¬¦
+	Kw_not,			// !  é€»è¾‘éè¿ç®—ç¬¦
+	Kw_and,			// && é€»è¾‘ä¸è¿ç®—ç¬¦
+	Kw_or,			// || é€»è¾‘æˆ–è¿ç®—ç¬¦
 
-	Kw_addr,		// & È¡µØÖ·¡¢ÓëÔËËã·û
-	Kw_pointsto,	// -> Ö¸Ïò½á¹¹Ìå³ÉÔ±ÔËËã·û
-	Kw_dot,			// . ½á¹¹Ìå³ÉÔ±ÔËËã·û
-	Kw_openpa,		// ( ×óÔ²À¨ºÅ
-	Kw_closepa,		// ) ÓÒÔ²À¨ºÅ
-	Kw_openbr,		// [ ×óÖĞÀ¨ºÅ
-	Kw_closebr,		// ] ÓÒÖĞÀ¨ºÅ
-	Kw_begin,		// { ×ó´óÀ¨ºÅ
-	Kw_end,			// } ÓÒ´óÀ¨ºÅ
-	Kw_semicolon,	// ; ·ÖºÅ 
-	Kw_comma,		// , ¶ººÅ
-	Kw_hash,		// # ºÅ
-	Kw_eof,			// ÎÄ¼ş½áÊø·û
+	Kw_addr,		// & å–åœ°å€ã€ä¸è¿ç®—ç¬¦
+	Kw_pointsto,	// -> æŒ‡å‘ç»“æ„ä½“æˆå‘˜è¿ç®—ç¬¦
+	Kw_dot,			// . ç»“æ„ä½“æˆå‘˜è¿ç®—ç¬¦
+	Kw_openpa,		// ( å·¦åœ†æ‹¬å·
+	Kw_closepa,		// ) å³åœ†æ‹¬å·
+	Kw_openbr,		// [ å·¦ä¸­æ‹¬å·
+	Kw_closebr,		// ] å³ä¸­æ‹¬å·
+	Kw_begin,		// { å·¦å¤§æ‹¬å·
+	Kw_end,			// } å³å¤§æ‹¬å·
+	Kw_semicolon,	// ; åˆ†å· 
+	Kw_comma,		// , é€—å·
+	Kw_hash,		// # å·
+	Kw_eof,			// æ–‡ä»¶ç»“æŸç¬¦
 
 
 
-	/* ³£Á¿ */
-	Kw_cchar,		// ×Ö·û³£Á¿
-	Kw_cint,		// ÕûĞÍ³£Á¿
-	Kw_cfloat,		// ¸¡µãĞÍ³£Á¿	
-	Kw_cstr,		// ×Ö·û´®³£Á¿
+	/* å¸¸é‡ */
+	Kw_cchar,		// å­—ç¬¦å¸¸é‡
+	Kw_cint,		// æ•´å‹å¸¸é‡
+	Kw_cfloat,		// æµ®ç‚¹å‹å¸¸é‡	
+	Kw_cstr,		// å­—ç¬¦ä¸²å¸¸é‡
 
-	/* ¹Ø¼ü×Ö */
-	Kw_char,		// char¹Ø¼ü×Ö
-	Kw_int,			// int¹Ø¼ü×Ö
-	Kw_float,		// float¹Ø¼ü×Ö
-	Kw_void,		// void¹Ø¼ü×Ö 
-	Kw_struct,		// struct¹Ø¼ü×Ö
-	Kw_if,			// if¹Ø¼ü×Ö
-	Kw_else,		// else¹Ø¼ü×Ö
-	Kw_for,			// for¹Ø¼ü×Ö
-	Kw_while,		// while¹Ø¼ü×Ö
-	Kw_continue,	// continue¹Ø¼ü×Ö
-	Kw_break,		// break¹Ø¼ü×Ö
-	Kw_return,		// return¹Ø¼ü×Ö
-	Kw_include,		//include¹Ø¼ü×Ö
+	/* å…³é”®å­— */
+	Kw_char,		// charå…³é”®å­—
+	Kw_int,			// intå…³é”®å­—
+	Kw_float,		// floatå…³é”®å­—
+	Kw_void,		// voidå…³é”®å­— 
+	Kw_struct,		// structå…³é”®å­—
+	Kw_if,			// ifå…³é”®å­—
+	Kw_else,		// elseå…³é”®å­—
+	Kw_for,			// forå…³é”®å­—
+	Kw_while,		// whileå…³é”®å­—
+	Kw_continue,	// continueå…³é”®å­—
+	Kw_break,		// breakå…³é”®å­—
+	Kw_return,		// returnå…³é”®å­—
+	Kw_include,		//includeå…³é”®å­—
 
-	Kw_notes,		//×¢ÊÍ±ê¼Ç
-	Kw_space,		//¿Õ¸ñ
-	Kw_tabs,		//ÖÆ±í·û
+	Kw_notes,		//æ³¨é‡Šæ ‡è®°
+	Kw_space,		//ç©ºæ ¼
+	Kw_tabs,		//åˆ¶è¡¨ç¬¦
 
-	/* ±êÊ¶·û */
-	Kw_identv,		//±äÁ¿Ãû
-	Kw_identf		//º¯ÊıÃû
+	/* æ ‡è¯†ç¬¦ */
+	Kw_identv,		//å˜é‡å
+	Kw_identf		//å‡½æ•°å
 }Key_Word_Code;
 
 
 
-typedef struct Key_Word {			//´æ´¢µ¥´Ê½á¹¹
-	struct Key_Word* prior;			//Ö¸ÏòÇ°Ò»¸öµ¥´Ê
-	int KwCode;						//µ¥´Ê±àÂë
-	char spell[capacity];			//µ¥´Ê×Ö·û´®
-	struct Key_Word* next;			//Ö¸Ïò¹şÏ£³åÍ»µÄÆäËûµ¥´Ê£¬»òÖ¸ÏòÍ¬Ò»ĞĞµÄÏÂÒ»¸öµ¥´Ê
+typedef struct Key_Word {			//å­˜å‚¨å•è¯ç»“æ„
+	struct Key_Word* prior;			//æŒ‡å‘å‰ä¸€ä¸ªå•è¯
+	int KwCode;						//å•è¯ç¼–ç 
+	char spell[capacity];			//å•è¯å­—ç¬¦ä¸²
+	struct Key_Word* next;			//æŒ‡å‘å“ˆå¸Œå†²çªçš„å…¶ä»–å•è¯ï¼Œæˆ–æŒ‡å‘åŒä¸€è¡Œçš„ä¸‹ä¸€ä¸ªå•è¯
 	int row_tail_flag;
 }Key_Word;
 
 typedef struct words {
-	int count;						//ÈİÁ¿
-	int row;						//ÒÑÊ¹ÓÃ¼¸ĞĞ
-	Key_Word** list;		//Ò»ĞĞÄÚ´æ·ÅµÄµ¥´ÊÁ´±í
+	int count;						//å®¹é‡
+	int row;						//å·²ä½¿ç”¨å‡ è¡Œ
+	Key_Word** list;		//ä¸€è¡Œå†…å­˜æ”¾çš„å•è¯é“¾è¡¨
 }words;
 
-typedef struct member {					//½á¹¹ÌåÄÚ²¿³ÉÔ±
-	char word[var_size];				//Ã¿ĞĞ´æ·ÅÒ»¸ö±äÁ¿
-	char type[type_size];							//±äÁ¿µÄÀàĞÍ(int¡¢float¡¢char)
-	int array_flag;						//ÊÇ·ñÎªÊı×é
-	int array_count;					//ÈôÊÇÊı×é£¬ÆäÈİÁ¿
-	int init_flag;						//ÊÇ·ñÒÑ³õÊ¼»¯
-	int* part_init;						//ÆäÓàÊı×é³ÉÔ±ÊÇ·ñÒÑ³õÊ¼»¯
-	struct member* next;				//½á¹¹Ìå³ÉÔ±Ö¸Õë
+typedef struct member {					//ç»“æ„ä½“å†…éƒ¨æˆå‘˜
+	char word[var_size];				//æ¯è¡Œå­˜æ”¾ä¸€ä¸ªå˜é‡
+	char type[type_size];							//å˜é‡çš„ç±»å‹(intã€floatã€char)
+	int array_flag;						//æ˜¯å¦ä¸ºæ•°ç»„
+	int array_count;					//è‹¥æ˜¯æ•°ç»„ï¼Œå…¶å®¹é‡
+	int init_flag;						//æ˜¯å¦å·²åˆå§‹åŒ–
+	int* part_init;						//å…¶ä½™æ•°ç»„æˆå‘˜æ˜¯å¦å·²åˆå§‹åŒ–
+	struct member* next;				//ç»“æ„ä½“æˆå‘˜æŒ‡é’ˆ
 }member;
 
-typedef struct {						//	½á¹¹ÌåÊı×éÆäÓà³ÉÔ±
+typedef struct {						//	ç»“æ„ä½“æ•°ç»„å…¶ä½™æˆå‘˜
 	int* init_flag;
-	member** mem;						//ÆäÓà½á¹¹ÌåµÄÄÚ²¿³ÉÔ±
+	member** mem;						//å…¶ä½™ç»“æ„ä½“çš„å†…éƒ¨æˆå‘˜
 }array_next;
 
-typedef struct {				//´æ·ÅÉùÃ÷µÄ±äÁ¿£¬±ê¼ÇÆäÊÇ·ñÒÑ¾­³õÊ¼»¯
-	int count;							//ÈİÁ¿
-	int row;							//ÒÑÊ¹ÓÃ¼¸ĞĞ
-	char(*word)[var_size];				//Ã¿ĞĞ´æ·ÅÒ»¸ö±äÁ¿(´ËÎª¿Õ£¬²»´æÔÚ»òÊÇ½á¹¹ÌåÉùÃ÷¡£²»Îª¿Õ£¬¼´Îª±äÁ¿)
-	char(*type)[type_size];				//±äÁ¿µÄÀàĞÍ(char¡¢int¡¢float¡¢struct ^)
-	int* array_flag;					//ÊÇ·ñÎªÊı×é
-	int* array_count;					//ÈôÊÇÊı×é£¬ÆäÈİÁ¿
-	int* init_flag;						//ÊÇ·ñÒÑ³õÊ¼»¯(¶Ô·Çstruct±äÁ¿£¨²»°üº¬structÊı×é£©À´Ëµ)
-	member** mem;						//½á¹¹Ìå³ÉÔ±Ö¸ÕëÊı×é
-	array_next** part;					//Êı×é/½á¹¹ÌåÊı×éÆäÓà³ÉÔ±
-	int* grade;							//ÈôÊÇ¾Ö²¿±äÁ¿£¬ÊµÔÚº¯ÊıÌåÄÚµÄµÚ¼¸²ã{}¶¨ÒåµÄ
+typedef struct {				//å­˜æ”¾å£°æ˜çš„å˜é‡ï¼Œæ ‡è®°å…¶æ˜¯å¦å·²ç»åˆå§‹åŒ–
+	int count;							//å®¹é‡
+	int row;							//å·²ä½¿ç”¨å‡ è¡Œ
+	char(*word)[var_size];				//æ¯è¡Œå­˜æ”¾ä¸€ä¸ªå˜é‡(æ­¤ä¸ºç©ºï¼Œä¸å­˜åœ¨æˆ–æ˜¯ç»“æ„ä½“å£°æ˜ã€‚ä¸ä¸ºç©ºï¼Œå³ä¸ºå˜é‡)
+	char(*type)[type_size];				//å˜é‡çš„ç±»å‹(charã€intã€floatã€struct ^)
+	int* array_flag;					//æ˜¯å¦ä¸ºæ•°ç»„
+	int* array_count;					//è‹¥æ˜¯æ•°ç»„ï¼Œå…¶å®¹é‡
+	int* init_flag;						//æ˜¯å¦å·²åˆå§‹åŒ–(å¯¹éstructå˜é‡ï¼ˆä¸åŒ…å«structæ•°ç»„ï¼‰æ¥è¯´)
+	member** mem;						//ç»“æ„ä½“æˆå‘˜æŒ‡é’ˆæ•°ç»„
+	array_next** part;					//æ•°ç»„/ç»“æ„ä½“æ•°ç»„å…¶ä½™æˆå‘˜
+	int* grade;							//è‹¥æ˜¯å±€éƒ¨å˜é‡ï¼Œå®åœ¨å‡½æ•°ä½“å†…çš„ç¬¬å‡ å±‚{}å®šä¹‰çš„
 }variable;
 
 
-typedef struct parameter {					//º¯ÊıÄÚ²¿²ÎÊı
-	char word[var_size];				//²ÎÊıÃû
-	char type[type_size];				//²ÎÊıµÄÀàĞÍ(int¡¢float¡¢char)
-	int array_flag;						//ÊÇ·ñÎªÊı×é
-	int array_count;					//ÈôÊÇÊı×é£¬ÆäÈİÁ¿
-	member* mem;						//½á¹¹Ìå³ÉÔ±Ö¸Õë
-	struct parameter* next;				//ÏÂÒ»¸ö²ÎÊı
+typedef struct parameter {					//å‡½æ•°å†…éƒ¨å‚æ•°
+	char word[var_size];				//å‚æ•°å
+	char type[type_size];				//å‚æ•°çš„ç±»å‹(intã€floatã€char)
+	int array_flag;						//æ˜¯å¦ä¸ºæ•°ç»„
+	int array_count;					//è‹¥æ˜¯æ•°ç»„ï¼Œå…¶å®¹é‡
+	member* mem;						//ç»“æ„ä½“æˆå‘˜æŒ‡é’ˆ
+	struct parameter* next;				//ä¸‹ä¸€ä¸ªå‚æ•°
 }parameter;
 
-typedef struct {						//´æ·ÅÉùÃ÷µÄº¯Êı
-	int count;							//ÈİÁ¿
-	int row;							//ÒÑÊ¹ÓÃ¼¸ĞĞ
-	int* is_define;						//º¯Êı¶¨Òå»¹ÊÇº¯ÊıÉùÃ÷
-	char(*word)[var_size];				//Ã¿ĞĞ´æ·ÅÒ»¸öº¯ÊıÃû
-	char(*type)[type_size];				//º¯Êı·µ»ØÖµÀàĞÍ(ÔİÊ±Ö»Ö§³Öchar¡¢int¡¢float¡¢void)
-	parameter** para;						//²ÎÊı
+typedef struct {						//å­˜æ”¾å£°æ˜çš„å‡½æ•°
+	int count;							//å®¹é‡
+	int row;							//å·²ä½¿ç”¨å‡ è¡Œ
+	int* is_define;						//å‡½æ•°å®šä¹‰è¿˜æ˜¯å‡½æ•°å£°æ˜
+	char(*word)[var_size];				//æ¯è¡Œå­˜æ”¾ä¸€ä¸ªå‡½æ•°å
+	char(*type)[type_size];				//å‡½æ•°è¿”å›å€¼ç±»å‹(æš‚æ—¶åªæ”¯æŒcharã€intã€floatã€void)
+	parameter** para;						//å‚æ•°
 }function;
 
 
 jmp_buf jmpbuf;
-int JmpJud;//ÊÇ·ñ±àÒë³É¹¦µÄ±êÖ¾
+int JmpJud;//æ˜¯å¦ç¼–è¯‘æˆåŠŸçš„æ ‡å¿—
 extern int row;
-extern int main_flag;		//mainº¯ÊıÊÇ·ñÒÑ³öÏÖ,ÓÃÀ´ÅĞ¶ÏincludeÊÇ·ñÔÚmainº¯ÊıÖ®Ç°
+extern int main_flag;		//mainå‡½æ•°æ˜¯å¦å·²å‡ºç°,ç”¨æ¥åˆ¤æ–­includeæ˜¯å¦åœ¨mainå‡½æ•°ä¹‹å‰
 
-enum Error_type {				//´Ó1¿ªÊ¼
+enum Error_type {				//ä»1å¼€å§‹
 	program_start,
 
-	func_undefined,				//Ê¹ÓÃÎ´Öªº¯Êı
-	func_repeat_definition,		//ÖØ¸´¶¨Òåº¯Êı
-	var_undefined,				//Ê¹ÓÃÎ´¶¨Òå±äÁ¿
-	var_uninitialzed,			//Ê¹ÓÃÎ´³õÊ¼»¯±äÁ¿
-	var_repeat_definition,		//ÖØ¸´¶¨Òå±äÁ¿
+	func_undefined,				//ä½¿ç”¨æœªçŸ¥å‡½æ•°
+	func_repeat_definition,		//é‡å¤å®šä¹‰å‡½æ•°
+	var_undefined,				//ä½¿ç”¨æœªå®šä¹‰å˜é‡
+	var_uninitialzed,			//ä½¿ç”¨æœªåˆå§‹åŒ–å˜é‡
+	var_repeat_definition,		//é‡å¤å®šä¹‰å˜é‡
 
-	lack_parameter,				//È±ÉÙ²ÎÊı
-	lack_openpa,				//È±ÉÙ×óÔ²À¨ºÅ
-	lack_closepa,				//È±ÉÙÓÒÔ²À¨ºÅ
-	lack_openbr,				//È±ÉÙ×óÖĞÀ¨ºÅ
-	lack_closebr,				//È±ÉÙÓÒÖĞÀ¨ºÅ
-	lack_begin,					//È±ÉÙ×ó»¨À¨ºÅ
-	lack_end,					//È±ÉÙÓÒ»¨À¨ºÅ
-	lack_semicolon,				//È±ÉÙ·ÖºÅ
-	lack_if,					//else»òelse ifÊ¹ÓÃ´íÎó
-	lack_expression,			//È±·¦±í´ïÊ½
-	lack_quotation_mark,		//È±ÉÙÒıºÅ
-	lack_dquotation_mark,		//È±ÉÙË«ÒıºÅ
-	lack_space,					//È±ÉÙ¿Õ¸ñ
-	lack_identv,				//È±ÉÙ±äÁ¿Ãû
-	lack_identf,				//È±ÉÙº¯ÊıÃû
-	lack_value,					//¶ªÊ§¾«È·Êı¾İ
+	lack_parameter,				//ç¼ºå°‘å‚æ•°
+	lack_openpa,				//ç¼ºå°‘å·¦åœ†æ‹¬å·
+	lack_closepa,				//ç¼ºå°‘å³åœ†æ‹¬å·
+	lack_openbr,				//ç¼ºå°‘å·¦ä¸­æ‹¬å·
+	lack_closebr,				//ç¼ºå°‘å³ä¸­æ‹¬å·
+	lack_begin,					//ç¼ºå°‘å·¦èŠ±æ‹¬å·
+	lack_end,					//ç¼ºå°‘å³èŠ±æ‹¬å·
+	lack_semicolon,				//ç¼ºå°‘åˆ†å·
+	lack_if,					//elseæˆ–else ifä½¿ç”¨é”™è¯¯
+	lack_expression,			//ç¼ºä¹è¡¨è¾¾å¼
+	lack_quotation_mark,		//ç¼ºå°‘å¼•å·
+	lack_dquotation_mark,		//ç¼ºå°‘åŒå¼•å·
+	lack_space,					//ç¼ºå°‘ç©ºæ ¼
+	lack_identv,				//ç¼ºå°‘å˜é‡å
+	lack_identf,				//ç¼ºå°‘å‡½æ•°å
+	lack_value,					//ä¸¢å¤±ç²¾ç¡®æ•°æ®
 
-	type_error,					//±äÁ¿ÀàĞÍ²»Ò»ÖÂ		
-	array_error,				//Êı×é´íÎó(²»ÍêÕû)
-	struct_error,				//½á¹¹Ìå´íÎó
-	expression_error,			//´íÎóµÄ±í´ïÊ½
-	func_parameter_error,		//º¯ÊıµÄ²ÎÊı²»Ò»ÖÂ
-	func_define_error,			//º¯ÊıÄÚ²¿²ÎÊı²»ºÏ¹æ·¶
-	continue_use_error,			//continueÊ¹ÓÃ³¡¾°´íÎó
-	break_use_error,			//breakÊ¹ÓÃ³¡¾°´íÎó
-	return_error,				//returnÀàĞÍ´íÎó				£¨Èôº¯ÊıÎ´ÉùÃ÷ÀàĞÍ£¬Ä¬ÈÏ·µ»ØÖµÎªint£©
-	headfile_error,				//Í·ÎÄ¼şÒıÓÃ´íÎó
-	main_error,					//Ö÷º¯Êı·µ»ØÖµÀàĞÍ²»ÊÇint
-	para_type_error,			//²ÎÊıÀàĞÍ´íÎó
+	type_error,					//å˜é‡ç±»å‹ä¸ä¸€è‡´		
+	array_error,				//æ•°ç»„é”™è¯¯(ä¸å®Œæ•´)
+	struct_error,				//ç»“æ„ä½“é”™è¯¯
+	expression_error,			//é”™è¯¯çš„è¡¨è¾¾å¼
+	func_parameter_error,		//å‡½æ•°çš„å‚æ•°ä¸ä¸€è‡´
+	func_define_error,			//å‡½æ•°å†…éƒ¨å‚æ•°ä¸åˆè§„èŒƒ
+	continue_use_error,			//continueä½¿ç”¨åœºæ™¯é”™è¯¯
+	break_use_error,			//breakä½¿ç”¨åœºæ™¯é”™è¯¯
+	return_error,				//returnç±»å‹é”™è¯¯				ï¼ˆè‹¥å‡½æ•°æœªå£°æ˜ç±»å‹ï¼Œé»˜è®¤è¿”å›å€¼ä¸ºintï¼‰
+	headfile_error,				//å¤´æ–‡ä»¶å¼•ç”¨é”™è¯¯
+	main_error,					//ä¸»å‡½æ•°è¿”å›å€¼ç±»å‹ä¸æ˜¯int
+	para_type_error,			//å‚æ•°ç±»å‹é”™è¯¯
 
-	init_value_more,				//³õÊ¼ÖµÉè¶¨Ïî¹ı¶à
-	unknown_struct_type,			//Î´ÖªµÄ½á¹¹ÌåÀàĞÍ
-	struct_lack_mem,				//½á¹¹ÌåÄÚ²¿È±ÉÙ³ÉÔ±±äÁ¿
-	repeat_struct_statement,		//ÖØ¸´µÄ½á¹¹ÌåÉùÃ÷
-	need_Kw_begin_Kw_end,			//ĞèÒª´ø´óÀ¨ºÅµÄ±í´ïÊ½
-	statememnt_should_front,		//º¯ÊıÉùÃ÷Ó¦·ÅÔÚmainº¯ÊıÖ®Ç°
-	para_too_more,					//º¯Êı´«µİ²ÎÊı¹ı¶à
-	para_too_less					//º¯Êı´«µİ²ÎÊı¹ıÉÙ
+	init_value_more,				//åˆå§‹å€¼è®¾å®šé¡¹è¿‡å¤š
+	unknown_struct_type,			//æœªçŸ¥çš„ç»“æ„ä½“ç±»å‹
+	struct_lack_mem,				//ç»“æ„ä½“å†…éƒ¨ç¼ºå°‘æˆå‘˜å˜é‡
+	repeat_struct_statement,		//é‡å¤çš„ç»“æ„ä½“å£°æ˜
+	need_Kw_begin_Kw_end,			//éœ€è¦å¸¦å¤§æ‹¬å·çš„è¡¨è¾¾å¼
+	statememnt_should_front,		//å‡½æ•°å£°æ˜åº”æ”¾åœ¨mainå‡½æ•°ä¹‹å‰
+	para_too_more,					//å‡½æ•°ä¼ é€’å‚æ•°è¿‡å¤š
+	para_too_less					//å‡½æ•°ä¼ é€’å‚æ•°è¿‡å°‘
 };
 
 
 
-//----------------------------´Ê·¨·ÖÎöº¯Êı------------------------------------
+//----------------------------è¯æ³•åˆ†æå‡½æ•°------------------------------------
 void Inithashtable(Key_Word keywords[], int kw_length, Key_Word* kword_hashtable[]);
 int elf_hash(char* key);
 void word_storage(words* array);
@@ -234,10 +234,10 @@ void printf_color(Key_Word* x);
 void print_hashtable(Key_Word* kword_hashtable[]);
 void grammar_clear(words array, variable* pvar, variable* pvar_in, function* pfunc);
 void External_dec(variable* pvar, variable* pvar_in, function* pfunc);
-void variable_storage(variable* var);//´æ´¢³öÏÖµÄ±äÁ¿»ò½á¹¹ÌåÉùÃ÷
-void variable_expand(variable* var);//¿Õ¼ä²»¹»À©Èİ
+void variable_storage(variable* var);//å­˜å‚¨å‡ºç°çš„å˜é‡æˆ–ç»“æ„ä½“å£°æ˜
+void variable_expand(variable* var);//ç©ºé—´ä¸å¤Ÿæ‰©å®¹
 
-//-----------------------------Óï·¨·ÖÎöº¯Êı------------------------------------
+//-----------------------------è¯­æ³•åˆ†æå‡½æ•°------------------------------------
 bool have_space_judge();
 void next_node();
 void quote_dispose();
@@ -275,8 +275,8 @@ void more_struct_mem_init_three(variable* pvar, variable* pvar_in, function* pfu
 
 
 void type_dispose(variable* pvar, variable* pvar_in, function* pfunc);
-void function_storage(function* pfunc);//´æ·ÅÉùÃ÷µÄº¯Êı
-void function_expand(function* pfunc);//¿Õ¼ä²»¹»À©Èİ
+void function_storage(function* pfunc);//å­˜æ”¾å£°æ˜çš„å‡½æ•°
+void function_expand(function* pfunc);//ç©ºé—´ä¸å¤Ÿæ‰©å®¹
 int have_func_define(function* pfunc, int pos);
 parameter* have_func_var(function* pfunc);
 int have_identv(variable* pnow);
